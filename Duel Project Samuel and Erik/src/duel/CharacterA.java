@@ -1,9 +1,9 @@
 package duel;
 
 public class CharacterA implements Dueler {
-	
+
 	private int hp;
-	
+
 	public CharacterA() {}
 	
 	public String getName() {
