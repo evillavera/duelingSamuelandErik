@@ -1,7 +1,7 @@
 package duel;
 
 public class CharacterB implements Dueler {
-	
+	private int hp;
 	public CharacterB() {
 	}
 	
@@ -10,10 +10,12 @@ public class CharacterB implements Dueler {
 		return "Samuel Khong ";
 	}
 
-	public void setStartingHP(int hp) {}
+	public void setStartingHP(int hp) {
+		this.hp = hp;
+	}
 	
 	public int getHP() {
-		return 100;
+		return hp
 	}
 
 	public void taunt() {

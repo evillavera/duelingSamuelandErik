@@ -2,10 +2,9 @@ package duel;
 
 public class CharacterA implements Dueler {
 	
-	private String name; 
+	private int hp; 
 	
-	public CharacterA(String name) {
-		this.name=name;
+	public CharacterA() {
 	}
 	
 	
@@ -13,10 +12,12 @@ public class CharacterA implements Dueler {
 		return "Erik Villavera ";
 	}
 
-	public void setStartingHP(int hp) {}
+	public void setStartingHP(int hp) {
+		this.hp = hp;
+	}
 	
 	public int getHP() {
-		return 100;
+		return hp;
 	}
 
 	public void taunt() {
