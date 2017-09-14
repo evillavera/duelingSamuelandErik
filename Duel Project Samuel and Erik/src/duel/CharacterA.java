@@ -21,4 +21,4 @@ public class CharacterA implements Dueler {
 	public void taunt() {
 		System.out.println("You smell like poop! ");
 	}
-	}
+}

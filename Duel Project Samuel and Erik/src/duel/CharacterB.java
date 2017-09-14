@@ -20,7 +20,7 @@ public class CharacterB implements Dueler {
 	}
 
 	public void taunt() {
-		
+		System.out.println("You look like a monkey");
 	}
-	}
+}
 
