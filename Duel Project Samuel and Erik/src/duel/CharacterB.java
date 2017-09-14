@@ -1,11 +1,11 @@
 package duel;
 
-public class CharacterA implements Dueler {
-	
-	public CharacterA() {}
+public class CharacterB implements Dueler {
+
+	public CharacterB() {}
 	
 	public String getName() {
-		return "Erik Villavera ";
+		return "Samuel Khong ";
 	}
 
 	public void setStartingHP(int hp) {}
