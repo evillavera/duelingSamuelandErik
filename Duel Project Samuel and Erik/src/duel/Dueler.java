@@ -1,7 +1,5 @@
 package duel;
 
-import aa201718.Dueler;
-
 //period 4
 
 public interface Dueler {
