@@ -31,8 +31,8 @@ public class CharacterB implements Dueler {
 	}
 
 	public int getAction(Object caller) {
-		
-		return 0;
+		if(caller instanceof CharacterB)
+			
 	}
 
 	public void hit(Object caller) {
