@@ -30,7 +30,6 @@ public class CharacterA implements Dueler {
 	}
 
 	public int getAction(Object caller) {
-		
 		return 0;
 	}
 
