@@ -23,22 +23,18 @@ public class CharacterB implements Dueler {
 		System.out.println("You look like a monkey");
 	}
 
-
-	@Override
 	public boolean determineIfOpponentIsFair(Dueler d, int hp) {
-		// TODO Auto-generated method stub
-		return false;
+		if(d.getHP() == hp)
+			return true;
+		else
+			return false;
 	}
 
-
-	@Override
 	public int getAction(Object caller) {
 		
 		return 0;
 	}
 
-
-	@Override
 	public void hit(Object caller) {
 		
 	}
