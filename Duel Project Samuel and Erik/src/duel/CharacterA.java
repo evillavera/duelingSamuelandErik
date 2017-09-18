@@ -30,7 +30,7 @@ public class CharacterA implements Dueler {
 	}
 
 	public int getAction(Object caller) {
-		return 0;
+		if(caller instanceof CharacterA) 
 	}
 
 	public void hit(Object caller) {
