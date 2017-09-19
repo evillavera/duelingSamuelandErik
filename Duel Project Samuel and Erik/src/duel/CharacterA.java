@@ -1,9 +1,6 @@
 package duel;
 
 public class CharacterA implements Dueler {
-
-	private int loaded = 0;
-	private int firstRound = 0;
 	private int hp;
 
 	public CharacterA() {}
@@ -33,21 +30,15 @@ public class CharacterA implements Dueler {
 	
 
 	public int getAction(Object caller) {
-			if(Math.random() < .5 && loaded == 0 || firstRound == 0) {
-				this.loaded = 1;
-				this.firstRound = 1;
-				return 0;
-			}
-			else	
-				if (Math.random() < .8 || loaded == 0){
-					return 2;
-				}else {
-					this.loaded = 0;
-					return 1;
-		} 
+			if (caller instanceof Duel) {
+				return (int) Math.round(Math.random()*2);
+			} else
+				return 3;
 	}
 
 	public void hit(Object caller) {
-	
+			if (caller instanceof Duel) {
+				this.hp -= 10;
+			}
 	}
 }
