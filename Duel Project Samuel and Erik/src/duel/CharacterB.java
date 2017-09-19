@@ -31,12 +31,15 @@ public class CharacterB implements Dueler {
 	}
 
 	public int getAction(Object caller) {
-		if(caller instanceof CharacterB)
-			
+		if (caller instanceof Duel) 
+			return (int) Math.round(Math.random()*2);
+		else
+			return 3;
 	}
 
 	public void hit(Object caller) {
-		
+		if (caller instanceof Duel) 
+			this.hp -= 10;
 	}
 }
 
