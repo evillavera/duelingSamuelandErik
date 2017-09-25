@@ -31,8 +31,22 @@ public class CharacterB implements Dueler {
 	}
 
 	public int getAction(Object caller) {
+		boolean isLoaded = false;
 		if (caller instanceof Duel) 
-			return (int) Math.round(Math.random()*2);
+			if(!isLoaded)
+				if(Math.round(Math.random()) < .5) {
+					isLoaded = true;
+					return 0;
+				}
+				else
+					return 2;
+			else
+				if(Math.round(Math.random()) < .5) {
+					isLoaded = false;
+					return 1;
+				}
+				else
+					return 2;
 		else
 			return 3;
 	}
