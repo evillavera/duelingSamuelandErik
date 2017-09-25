@@ -20,7 +20,7 @@ public class CharacterB implements Dueler {
 	}
 
 	public void taunt() {
-		System.out.println("You look pretty!");
+		System.out.println("I have bigger nipples than you");
 	}
 
 	public boolean determineIfOpponentIsFair(Dueler d, int hp) {
@@ -34,14 +34,14 @@ public class CharacterB implements Dueler {
 		boolean isLoaded = false;
 		if (caller instanceof Duel) 
 			if(!isLoaded)
-				if(Math.round(Math.random()) < .5) {
+				if((Math.random()) < .5) {
 					isLoaded = true;
 					return 0;
 				}
 				else
 					return 2;
 			else
-				if(Math.round(Math.random()) < .5) {
+				if((Math.random()) < .5) {
 					isLoaded = false;
 					return 1;
 				}
