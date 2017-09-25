@@ -2,7 +2,8 @@ package duel;
 
 public class CharacterA implements Dueler {
 	private int hp;
-
+	private int loaded = 0;
+	
 	public CharacterA() {}
 	
 	public String getName() {
@@ -30,10 +31,9 @@ public class CharacterA implements Dueler {
 	
 
 	public int getAction(Object caller) {
-			int loaded = 0; 
 			if (caller instanceof Duel) {
 				if(loaded == 0) {
-					if(Math.random() > .5) {
+					if(Math.random() > .2) {
 						loaded = 1;
 						return 0;
 					}
