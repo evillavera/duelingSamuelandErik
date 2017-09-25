@@ -18,7 +18,7 @@ public class CharacterA implements Dueler {
 	}
 
 	public void taunt() {
-		System.out.println("You smell like poop! ");
+		System.out.println("You smell like poopy! ");
 	}
 
 	public boolean determineIfOpponentIsFair(Dueler d, int hp) {
