@@ -40,7 +40,11 @@ public class CharacterA implements Dueler {
 					else return 2;
 				}
 				else 
-					return (int) Math.round(Math.random())+1;
+					if(Math.random() > .5) {
+						loaded = 0;
+						return 1;
+					}
+					else return 2;
 			} else
 				return 3;
 	}
