@@ -34,6 +34,7 @@ public class CharacterA implements Dueler {
 			if (caller instanceof Duel) {
 				if(loaded == 0) {
 					if(Math.random() > .5) {
+						loaded = 1;
 						return 0;
 					}
 					else return 2;
