@@ -3,6 +3,7 @@ package duel;
 public class CharacterA implements Dueler {
 	private int hp;
 	private int loaded = 0;
+	private boolean round1 = true;
 	
 	public CharacterA() {}
 	
@@ -32,6 +33,11 @@ public class CharacterA implements Dueler {
 
 	public int getAction(Object caller) {
 			if (caller instanceof Duel) {
+				if (round1) {
+					round1 = false;
+					loaded = 1;
+					return 0;
+				}
 				if(loaded == 0) {
 					if(Math.random() > .2) {
 						loaded = 1;
