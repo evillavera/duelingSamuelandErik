@@ -30,8 +30,16 @@ public class CharacterA implements Dueler {
 	
 
 	public int getAction(Object caller) {
+			int loaded = 0; 
 			if (caller instanceof Duel) {
-				return (int) Math.round(Math.random()*2);
+				if(loaded == 0) {
+					if(Math.random() > .5) {
+						return 0;
+					}
+					else return 2;
+				}
+				else 
+					return (int) Math.round(Math.random())+1;
 			} else
 				return 3;
 	}
