@@ -23,7 +23,7 @@ public class CharacterB implements Dueler {
 	}
 
 	public void taunt() {
-		System.out.println("I have bigger nipples than you");
+		System.out.println("You look like a monkey");
 	}
 
 	public boolean determineIfOpponentIsFair(Dueler d, int hp) {
